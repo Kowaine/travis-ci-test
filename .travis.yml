@@ -1,6 +1,14 @@
 language: python
 # python:
 #   - "3.9.1"
-before_install: pip install pipreqs && pipreqs ./ --encoding=utf8 --force
+before_install: pipreqs ./ --encoding=utf8 --force
 install: pip install -r requirements.txt
 script: python3 main.py
+deploy:
+  provider: releases
+  api_key: 4cXNvBKwot3gCEfESwLklQ
+  file:
+    - test.txt
+    - test2.xtx
+  skip_cleanup: true
+  overwrite: true
