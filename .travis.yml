@@ -1,16 +1,14 @@
 language: python
-# python:
-#   - "3.9.1"
-before_install: 
-  - pip install pipreqs && pipreqs ./ --encoding=utf8 --force
-  - mkdir data
+before_install:
+- pip install pipreqs && pipreqs ./ --encoding=utf8 --force
+- mkdir data
 install: pip install -r requirements.txt
 script: python3 main.py
 deploy:
   provider: releases
-  api_key: 
-    secure: d0e425292ab39d789924dcc11408f8e571f7f86e
   file_glob: true
   file: data/*
-  skip_cleanup: true
+  cleanup: false
   overwrite: true
+  api_key:
+    secure: SQHDBynoIXj9qbxVGy1RfSdyKW20BJqhZytlbzru7nh7qv2p+Ur2PlWP1Epb/oLSqjarfmxhiXj+ywFZosQZM/cZ3ElTMqlS0gLO97yVva8Pbqut6MQU7CpDQ1Knheto1duIityLP7TCw47+KSkEVa6/KGTXNLIM9HS+Z/KhtbqM7DHLtWzIOkfBep5SC/6nlTMRWUQPdyN+JSU7CFS2hLBiRcN3UFPiI1AV5qgLPXkviDVYzbu3MqoI4449Uj2o8qVxSTHGdVURWQtv4EtzN6SI9C42dgYVOF/Lb2YrvedjAtdukp0/qhAvbVd6r47V6RC/J1Jz7L/mVtboLjo3DafX6I6gOW5n0rvuR6C2aOA1Jbdf/1UKhuroHEBV8aUxOlNR7EpvA6i6p6XCKkCE7H3QUiKo1c2WvV+okyk1cf4g8S6cuNJqzW8azWuyrs5gl5Ub4v+5xCUCSOg0Pbm+5ykOPn7D2xlVuf2r2VqYIcwDt53O25BATLV1MX6/hrpJuxagLiw5p32eos3wt1EJaY6PvlUROT/KWWK4d3hYi9v21SByOlhqu6uxHgm6+8OVi1WtRpg8tuAf0amVrF29C7Zpp+CH7gtbi+GH3UErdgvkVNL5mptRcbVb+Oimv7xJlMqlME3zaFbiKXqfqLrt9FhSk1Yg4H/UUc/4ymjrQfc=
