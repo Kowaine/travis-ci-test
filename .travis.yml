@@ -7,6 +7,7 @@ script: python3 main.py
 deploy:
   provider: releases
   api_key: 4cXNvBKwot3gCEfESwLklQ
+  file_glob: true
   file: data/*
   skip_cleanup: true
   overwrite: true
