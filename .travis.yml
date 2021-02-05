@@ -6,7 +6,8 @@ install: pip install -r requirements.txt
 script: python3 main.py
 deploy:
   provider: releases
-  token: d0e425292ab39d789924dcc11408f8e571f7f86e
+  token: 
+    secure: "TOTGq6WFwH9XQs+Xowt3YxSUaiDPZLHBwaqyV/5Snvoa7BohBvLPjKmidt6YD91tVzL1Duec2b4fZk7WnTXpopLcmAAVN44TpJ/DG7ny1m/Ypv+J1TxC6+XIO21qMmXca8O+0B5p0JcXo7kuw1wxLmZviaSOLZJl16009j3qGMMQFJ5RtOH/fB+1D+zp3ti/J3FzDOOvsIUGzbHhOX2ktO4IerzVcjoCUVkFWeQLQ6KrZqa9ziA8v/kB6Xm5lNxLqjmrmdJPUxuBHxg/3ZB4gRTo7TaP6+dME+KwM8bDdRtlrI/gXDWl/+NrAP3h+XLnUzBTALaGUBbM9AIX9CrmjOQfqD9N+XbWPJ/rA3DUE7UuhUNBeq5PZapA43w4WOEejVoWY/HDWyInGqGvOw2VmVFuWHo4uZ9lZvbX/IQOpcJs7PQY3iNz5sgZYnJRffgMT4QnoZjSXcNDnvfBOuP6AeauW+ENoreoQaFTXsuqwlmK6WYvDNegsBSBDuLb3fETh7UfJU3Fbxah7qVztMHucboTbw+nis2cam9KpbRXgfuR7fUVQiolwPO+wsrq7crGEkYKGd5o5gnp0blQ61I+jli+2GPonCopeDXkXg4e1LwyPGJZ+bzzQYBB9SXav0fYUyddRrq3ylefX3OE4TRm3XBoXSYvFIpcozV4nZiWB6Q="
   file_glob: true
   file: data/*
   cleanup: false
