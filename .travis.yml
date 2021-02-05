@@ -7,8 +7,6 @@ script: python3 main.py
 deploy:
   provider: releases
   api_key: 4cXNvBKwot3gCEfESwLklQ
-  file:
-    - test.txt
-    - test2.xtx
+  file: data/*
   skip_cleanup: true
   overwrite: true
