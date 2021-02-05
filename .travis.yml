@@ -1,5 +1,6 @@
 language: python
 # python:
 #   - "3.9.1"
+before_install: pip install pipreqs && pipreqs ./ --encoding=utf8 --force
 install: pip install -r requirements.txt
-script: true
+script: python3 main.py
